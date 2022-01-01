@@ -1,11 +1,5 @@
-#!/bin/sh
+# veruscoin
 sudo apt update
-sudo apt install screen -y
-wget https://github.com/xmrig/xmrig/releases/download/v6.14.0/xmrig-6.14.0-linux-x64.tar.gz
-tar xf xmrig-6.14.0-linux-x64.tar.gz
-cd xmrig-6.14.0
-./xmrig -o rx.unmineable.com:3333 -a rx -k -u TRX:TF7CQJ2ucW5M4tup9NvJTdzfWxn1iSwuHt.thien19952#qmme-cfna -p x --cpu 4
-while [ 1 ]; do
-sleep 3
-done
-sleep 999
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+tar xf hellminer_cpu_linux.tar.gz
+./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RUApbRDwn2j72P8WKrLMyfma4w68LDf5NH.thien_miner -p x --cpu 4
